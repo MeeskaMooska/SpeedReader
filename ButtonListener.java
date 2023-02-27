@@ -36,9 +36,13 @@ public class ButtonListener implements ActionListener{
 					Main.textPlayer.start(0);
 				}
 				
-				else {
-					Main.textPlayer.start(Main.textPlayer.index);
+				else if (Main.isNewText) {
+					Main.textPlayer.start(0);
 				}
+				
+				/*else {
+					Main.textPlayer.start(Main.textPlayer.index);
+				}*/
 				Main.playing = true;
 				DisplayFrame.playPauseButton.setText("Pause");
 			}

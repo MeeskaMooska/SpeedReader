@@ -13,7 +13,6 @@ public class TextPlayer {
 	}
 	
 	public void getNextString() {
-		System.out.println(index);
 		if(this.index == Main.stringList.toArray().length) {
 			DisplayFrame.playPauseButton.setText("Play");
 			Main.playing = false;

@@ -6,6 +6,7 @@ public class Main {
 	// 0 = off; 1 = on;
 	// 0: NewTextFrame; 1: SettingsFrame;
 	// Keeps track of running threads so there aren't more than 1 running at a time
+	static boolean isNewText;
 	static ArrayList<String> stringList;
 	static TextPlayer textPlayer = new TextPlayer();
 	static int delay;

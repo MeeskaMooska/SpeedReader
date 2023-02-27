@@ -45,6 +45,14 @@ public class ArrayListConstructor {
 			}
 		}
 		// Finished product comes out here
-		Main.stringList = stringList;
+		// Main.stringList = stringList;
+		if(Main.stringList != stringList) {
+			Main.isNewText = true;
+			Main.stringList = stringList;
+		}
+		
+		else {
+			Main.isNewText = false;
+		}
 	}
 }
